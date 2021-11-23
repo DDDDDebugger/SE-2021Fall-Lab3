@@ -11,6 +11,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="helloPage"
+            android:text="@string/hello_button" />
+
         <RelativeLayout
             android:id="@+id/settings_customize_colors_holder"
             android:layout_width="match_parent"
@@ -297,11 +304,5 @@
 
         </RelativeLayout>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="helloPage"
-            android:text="@string/hello_button" />
     </LinearLayout>
 </ScrollView>
