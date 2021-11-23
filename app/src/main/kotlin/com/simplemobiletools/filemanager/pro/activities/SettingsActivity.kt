@@ -3,6 +3,7 @@ package com.simplemobiletools.filemanager.pro.activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.simplemobiletools.commons.dialogs.ChangeDateTimeFormatDialog
 import com.simplemobiletools.commons.dialogs.ConfirmationDialog
 import com.simplemobiletools.commons.dialogs.RadioGroupDialog
@@ -10,6 +11,7 @@ import com.simplemobiletools.commons.dialogs.SecurityDialog
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.RadioItem
+import com.simplemobiletools.filemanager.pro.HelloPageActivity
 import com.simplemobiletools.filemanager.pro.R
 import com.simplemobiletools.filemanager.pro.extensions.config
 import com.simplemobiletools.filemanager.pro.helpers.RootHelpers
@@ -20,6 +22,15 @@ class SettingsActivity : SimpleActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
+    }
+
+    /** Called when the user taps the Send button */
+    fun helloPage(view: View) {
+        // Do something in response to button
+        val intent = Intent(this, HelloPageActivity::class.java).apply {
+
+        }
+        startActivity(intent)
     }
 
     override fun onResume() {
