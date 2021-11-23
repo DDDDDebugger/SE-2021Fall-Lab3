@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.simplemobiletools.filemanager.pro"
     android:installLocation="auto">
 
@@ -20,7 +21,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".HelloPageActivity"
-            android:exported="false" />
+            android:parentActivityName=".activities.SettingsActivity"
+            android:exported="false" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SettingsActivity" />
+        </activity>
         <activity
             android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme" />
@@ -275,7 +282,8 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter>
+            <intent-filter android:scheme="http"
+                tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
