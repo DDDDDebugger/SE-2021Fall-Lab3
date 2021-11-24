@@ -84,10 +84,10 @@
         <b>Reddit:</b>
         https://www.reddit.com/r/SimpleMobileTools
     </string>
-    <string name="hello_button">Hello Page</string>
-    <string name="hello_string">Hello, Android!</string>
-    <string name="edit_message">Enter your name...</string>
-    <string name="button_send">Send</string>
+    <string name="hello_button" translatable="false">Hello Page</string>
+    <string name="hello_string" translatable="false">Hello, Android!</string>
+    <string name="edit_message" translatable="false">Enter your name...</string>
+    <string name="button_send" translatable="false">Send</string>
 
     <!--
         Haven't found some strings? There's more at
