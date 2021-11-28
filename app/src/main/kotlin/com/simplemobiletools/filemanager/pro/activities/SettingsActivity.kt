@@ -24,7 +24,7 @@ class SettingsActivity : SimpleActivity() {
         setContentView(R.layout.activity_settings)
     }
 
-    /** Called when the user taps the Send button */
+    /** Called when the user taps the Hello button */
     fun helloPage(view: View) {
         // Do something in response to button
         val intent = Intent(this, HelloPageActivity::class.java).apply {
