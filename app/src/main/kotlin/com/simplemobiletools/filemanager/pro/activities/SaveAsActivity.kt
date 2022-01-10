@@ -1,5 +1,6 @@
 package com.simplemobiletools.filemanager.pro.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -11,6 +12,7 @@ import com.simplemobiletools.filemanager.pro.extensions.config
 import java.io.File
 
 class SaveAsActivity : SimpleActivity() {
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_save_as)

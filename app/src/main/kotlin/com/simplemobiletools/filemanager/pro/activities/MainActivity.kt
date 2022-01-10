@@ -1,5 +1,6 @@
 package com.simplemobiletools.filemanager.pro.activities
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.SearchManager
 import android.content.ClipData
@@ -44,6 +45,7 @@ class MainActivity : SimpleActivity() {
 
     private lateinit var fragment: ItemsFragment
 
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -72,6 +74,7 @@ class MainActivity : SimpleActivity() {
         }
     }
 
+    @SuppressLint("MissingSuperCall")
     override fun onDestroy() {
         super.onDestroy()
         config.temporarilyShowHidden = false

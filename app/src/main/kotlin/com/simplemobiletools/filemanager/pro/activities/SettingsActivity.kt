@@ -1,5 +1,6 @@
 package com.simplemobiletools.filemanager.pro.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -19,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_settings.*
 import java.util.*
 
 class SettingsActivity : SimpleActivity() {
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
@@ -33,6 +35,7 @@ class SettingsActivity : SimpleActivity() {
         startActivity(intent)
     }
 
+    @SuppressLint("MissingSuperCall")
     override fun onResume() {
         super.onResume()
 

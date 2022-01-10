@@ -40,6 +40,5 @@ public class HelloPageActivity extends AppCompatActivity {
             );
             textView.setTextColor(Color.WHITE);
         }
-
     }
 }

@@ -23,6 +23,7 @@ class DecompressActivity : SimpleActivity() {
     private var currentPath = ""
     private var uri: Uri? = null
 
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_decompress)

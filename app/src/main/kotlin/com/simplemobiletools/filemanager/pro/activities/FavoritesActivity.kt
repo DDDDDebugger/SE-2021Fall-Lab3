@@ -1,5 +1,6 @@
 package com.simplemobiletools.filemanager.pro.activities
 
+import android.annotation.SuppressLint
 import android.graphics.Paint
 import android.os.Bundle
 import android.view.Menu
@@ -14,6 +15,7 @@ import com.simplemobiletools.filemanager.pro.extensions.config
 import kotlinx.android.synthetic.main.activity_favorites.*
 
 class FavoritesActivity : SimpleActivity(), RefreshRecyclerViewListener {
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorites)
